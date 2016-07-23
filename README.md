@@ -9,6 +9,8 @@ Adapted to linux by wolrah.
 
 This repository will include my changes to expand support of different CDNs.  
 
+You must use SNIProxy to properly forward SSL traffic, otherwise it will result in an error. https://github.com/dlundquist/sniproxy 
+
 To utilize these config files, install nginx version 1.9.8 or greater and place these files in the configuration directory (usually /etc/nginx).  You will need the mime.types file from the distribution, otherwise everything else can be empty.
 
 You will need to set up IP aliasing and DNS records as described in the original blog post.
